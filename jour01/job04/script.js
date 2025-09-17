@@ -1,8 +1,5 @@
 console.clear();
-console.log("Hello, console");
 
-
-    
 // 3 conditions enchainées
 
 function bisextile(annee) {
@@ -15,7 +12,7 @@ function bisextile(annee) {
                 return false; // divisible par 4 et 100
             
             }
-        } 
+        }
         else {
             return true; //divisible par 4 mais par par 100 
                 

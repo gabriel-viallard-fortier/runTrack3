@@ -7,6 +7,7 @@
     <script src="script.js"></script>
 </head>
 <body>
-    
+    <article id="citation">"La vie a beaucoup plus d’imagination que nous”</article>
+    <button id="button" onclick="citation()">Console</button>
 </body>
 </html>

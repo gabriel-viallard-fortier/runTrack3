@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+
+    background-color: yellow;
+    text-align: center;
+    min-height: 4096px;
+}
+#footer {
+    position: fixed;
+    width: 100%;
+    color: yellow;
+    height: 10%;
+    background-color: rgba(31,31,31,31);
+    text-align: center;
+}

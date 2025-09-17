@@ -1,13 +1,16 @@
 console.clear();
-console.log("Hello, console");
-
 
 function afficherJoursSemaine () {
 
-    joursSemaine = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Diamnche"];
+    joursSemaine = ["Lundi",
+                    "Mardi",
+                    "Mercredi",
+                    "Jeudi",
+                    "Vendredi",
+                    "Samedi",
+                    "Diamnche"];
 
     for (let i = 0 ; i < (joursSemaine.length) ; i ++) {
-
         console.log (joursSemaine[i]);
     }
 }

@@ -7,6 +7,7 @@
     <script src="script.js"></script>
 </head>
 <body>
-    
+    <button id="button" onclick="showhide()">Afficher / Masquer la citation</button>
+    <article hidden id="citation">“L'important n'est pas la chute, mais l'atterrissage.”</article>
 </body>
 </html>
