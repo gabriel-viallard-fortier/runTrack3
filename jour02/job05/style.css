@@ -12,4 +12,6 @@ body {
     height: 10%;
     background-color: rgba(31,31,31,31);
     text-align: center;
+    bottom: 0;
+
 }
