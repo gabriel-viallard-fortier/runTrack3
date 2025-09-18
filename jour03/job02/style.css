@@ -1,0 +1,29 @@
+body {
+    background-color: blueviolet;
+    text-align:center;
+}
+button {
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+.buttons {
+    justify-content: center;
+}
+p {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+.puzzle {
+    background-color: black;
+}
+.game-board {
+    background-color: aqua;
+}
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
