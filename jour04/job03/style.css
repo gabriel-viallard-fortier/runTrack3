@@ -1,0 +1,32 @@
+fieldset {
+    padding: 10%;
+    display: grid;
+    margin: auto auto;
+    border: solid 5px black;
+}
+form {
+    padding: 5%;
+    gap: 4rem;
+    margin: auto auto;
+    width: 50vw;
+    border-radius: 30px;
+    background-color: lightblue;
+    color: black;
+    display:grid;
+    
+}
+button {
+    margin: auto auto;
+}
+body {
+    background-color: black;
+}
+h1{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+}
+
+p {
+    background-color: white;
+}

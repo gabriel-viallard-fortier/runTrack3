@@ -1,0 +1,11 @@
+
+.gameboard {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap :1rem;
+}
+.gameboard-row {
+    display: flex;
+    gap :1rem;
+}

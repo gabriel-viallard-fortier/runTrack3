@@ -1,0 +1,14 @@
+body {
+    line-height: 2.5rem;
+    color: white;
+    background-color: grey;
+}
+
+a {
+    font-size: 2rem;
+    color: lightblue;
+    text-decoration: none;
+}
+a:visited {
+    color: brown;
+}
