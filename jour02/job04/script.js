@@ -1,6 +1,6 @@
 const textarea = document.getElementById('textarea');
 
-document.addEventListener("keypress", (e) => {
-    textarea.value = textarea.value + e.key;
+document.addEventListener("keydown", (event) => {
+    textarea.value = textarea.value + event.key;
 
 });

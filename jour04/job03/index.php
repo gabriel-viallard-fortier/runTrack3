@@ -10,11 +10,12 @@
 
 <body>
     <h1>JS : Jour04/Job03</h1>
-    <p id="para"></p>
     <form id="form" method="get">
         <fieldset>
-            <legend><h1>Formulaire de tri</h1></legend>
-            <h2>pokemon.json</h2>
+            <legend>
+                <p><b>./pokemon.json</b></p>
+                </legend>
+                <h2>Formulaire de tri</h2>
             <label for="id">ID</label>
             <input type="text" name="id" id="id">
             <label for="name">Nom</label>
@@ -24,8 +25,10 @@
                 <option value="" selected>Choisissez un type de pokemon</option>
             </select>
         </fieldset>
-        <input type="submit">Filtrer</input>
+        <input type="submit"></input>
     </form>
+    <div class="container">
+    <div id="para"></div></div>
     <script src="script.js" async></script>
 </body>
 
