@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form name="signInForm" onsubmit="return validateSignIn()" method="post">
+        <fieldset>
+            <legend><b>Inscrivez-vous</b></legend>
+            <p id="form-msg"><b>Veuillez remplir les informations suivantes :</b></p>
+
+            <label for="name">Nom :</label>
+            <input required type="text" id="name" name="name">
+            <p id="nameError"></p>
+
+            <label for="firstname">Prénom :</label>
+            <input required type="text" id="firstname" name="firstname">
+            <p id="firstnameError"></p>
+
+
+            <label for="address">Adresse : </label>
+            <input required type="text" id="address" name="address">
+            <p id="addressError"></p>
+
+            <label for="zip">Code postal :</label>
+            <input required type="text" id="zip" name="zip">
+            <p id="zipError"></p>
+
+            <label for="email ">Email :</label>
+            <input required type="email" name="email" id="email">
+            <p id="emailError"></p>
+
+
+            <label for="password1">Mot de passe :
+            </label>
+            <input required type="password" name="password1" id="password1">
+            <span class="little">
+                <input id="showPassword" name="showPassword" type="checkbox">&nbsp; &nbsp; Montrer le
+            mot de passe</span>
+            <p id="password1Error"></p>
+            
+            
+            <label id="password2Label" for="password2">Confirmez le mot de passe : </label>
+            <input required type="password" name="password2" id="password2">
+            <p id="password2Error"></p>
+
+
+
+            <button type="submit" id="submit">Envoyer</button>
+        </fieldset>
+    </form>
+    <script src="script.js" async></script>
+</body>
+
+</html>

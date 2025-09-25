@@ -33,7 +33,7 @@ async function filterPokemon() {
 
     // Filtre par ID
     if (idInput !== '') {
-      match = match && (pokemon.id.toString() === idInput)
+      match = match && (pokemon.id.toString() === idInput);
     }
     // Filtre par nom (fr/en)
     if (nameInput != '') {
@@ -84,50 +84,3 @@ document.getElementById('form').addEventListener('submit', async (event) => {
     
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// document.getElementById('form').addEventListener('submit', async (event) => {
-//   event.preventDefault(); // On empêche d'abord la soumission
-
-//   let data = await filterPokemon();
-
-//   const para = document.getElementById('para');
-//   para.innerHTML = ''; // Nettoyer avant d'afficher
-
-//   if (data.length > 0) {
-//     // Exemple : afficher sous forme de liste
-//     const ul = document.createElement('ul');
-//     data.forEach(pokemon => {
-//       const li = document.createElement('li');
-//       li.textContent = `#${pokemon.id} - ${pokemon.name.french} - ${pokemon.name.english} : (${pokemon.type.join(', ')})`;
-//       ul.appendChild(li);
-//     });
-//     para.appendChild(ul);
-//   } else {
-//     para.textContent = 'Aucun Pokémon trouvé.';
-//   }
-// });
