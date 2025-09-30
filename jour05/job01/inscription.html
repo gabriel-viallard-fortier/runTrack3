@@ -9,6 +9,26 @@
 </head>
 
 <body>
+        <header>
+
+
+            <div class="h1">
+                <h2>Accueil</h2>
+                   <h1>
+
+                        <ul>
+        <li>
+            <a href="./inscription.html">Inscription</a>
+            <p>Remplissez un simple formulaire pour accéder à plus de contenu</p>
+        </li>
+        <li>
+            <a href="./connection.html">Connection</a>
+            <p>Connectez vous directement</p>
+        </li>
+</ul>
+</h1>
+</div>
+</header>
     <form name="signInForm" onsubmit="return validateSignIn()" method="post">
         <fieldset>
             <legend><b>Inscrivez-vous</b></legend>
@@ -22,7 +42,6 @@
             <input required type="text" id="firstname" name="firstname">
             <p id="firstnameError"></p>
 
-
             <label for="address">Adresse : </label>
             <input required type="text" id="address" name="address">
             <p id="addressError"></p>
@@ -34,7 +53,6 @@
             <label for="email ">Email :</label>
             <input required type="email" name="email" id="email">
             <p id="emailError"></p>
-
 
             <label for="password1">Mot de passe :
             </label>

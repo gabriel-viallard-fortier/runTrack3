@@ -1,91 +1,217 @@
+
+#logo {
+    height: 25vh;
+    justify-content: center;
+    border-radius: 50%;
+    border:solid 1px black;
+    margin: 2rem auto;
+    box-shadow: red 4px 4px 15px, yellow 2px 2px 10px, rgb(51, 162, 4) -4px -10px 25px;
+}
+.img {
+    text-align: center;
+}
 form {
-    padding: 5%;
     display: grid;
+    width: 90%;
     color: whitesmoke;
-    width: 60%;
-    
+}
+a:hover {
+    text-shadow: 10px 10px 10px rgba(255, 255, 255, 0.445);
+    text-decoration:underline black 1px;
 }
 fieldset{
     border: 5px double black;
     border-radius: 20px;
-    background-image: linear-gradient(157deg, rgba(0, 225, 255, 0.656), rgba(255, 0, 0, 0.549), rgba(20, 151, 147, 0.609), rgba(92, 8, 8, 0.46));
+    background-image: linear-gradient(15deg, rgba(0, 225, 255, 0.656),  rgba(17, 156, 225, 0.592), rgba(20, 151, 147, 0.609), rgb(0, 0, 0));
     padding: 5%;
+    width: 75vw;
     display: grid;
-    align-items: center;
-    width: 100%;
-    font-size: 1.2rem;
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+    grid-template: 60% 40%;
+    box-shadow: rgb(255, 255, 255) 0px 54px 55px, lightblue 0px -12px 30px, cyan 0px 4px 6px, rgba(255, 217, 0, 1) 0px 12px 13px, rgb(46, 249, 0) 0px -3px 5px;
+    align-items: center;    
 }
 legend {
-    background-color: rgba(32,32,32,.25);
-    font-size: 2.5rem;
+    background-color: rgba(32,32,32,.75);
+    font-size: 1.5rem;
     color: rgb(135, 255, 88);
     border-radius: 10px;
-    padding: 1%;
+    padding: 4%;
+    box-shadow: 10px 10px 10px rgba(255, 0, 0, 0.373);
 }
-h1 {
-    width: 30%;
-    border-radius: 10px;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-image: linear-gradient(13deg, rgb(255, 166, 0), rgba(255, 0, 0, 0.46), rgba(255, 230, 0, 0.836));
-    color: rgb(33, 58, 199);
-    text-align:center;
+
+h2 
+{
+    color: white;
+    font-size: 1.4rem;
+} 
+li, a {
+    font-size: 1rem;
+    margin: auto auto;
+    
 }
-fieldset button {
-    grid-column: 1 / span 2;
-    height: 40px;
-    font-size: 1.5rem;
-    border-radius: 10px;
-        background-image: linear-gradient(157deg, rgba(51, 220, 74, 0.9), rgba(20, 151, 147, 0.609), rgba(25, 167, 58, 1));
+li p {
+    color: black;
+    padding-left: 2rem;
 }
-fieldset button:hover {
-        background-image: linear-gradient(157deg, rgba(51, 220, 74, 1), rgba(20, 151, 147, 1), rgba(25, 167, 58, 1));
+.ul {
+    width: 100%;
 
 }
+h2 {
+    color: black;
+    text-shadow: 1px 1px 10px white;
+}
+a{
+    padding: 1.2rem;
+    color: black;
+    text-shadow: 1px 1px 10px white;
+    font-size: 1.5rem;
+}
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    border-radius: 30px;
+    margin: auto auto;
+    padding: 2.1rem;
+    color: rgba(0, 0, 0, 0.756);
+    box-shadow: White 0px 0px 44px;
+    text-align: center;
+}
+.h1, .h1 a {
+        text-shadow: 0px 0px 10px whitesmoke;
+
+}
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    margin:auto;
+}
+.menu {
+    margin: 4rem auto;
+    text-align: left;
+    padding : 2.5%;
+    width: 90vw;
+    border-radius: 10px;
+    background-image: linear-gradient(157deg, rgba(17, 156, 225, 0.592), rgba(255, 255, 255, 0.205), rgba(31,31, 255,.6));
+    border: solid black 2px;
+    
+}
+.forms {
+    margin: auto auto;
+}
+hr {
+    width: 75%;
+}
+h4 {
+    text-align: center;
+}
+.h1 {
+    display: block;
+    padding: 6%;
+    margin-top: 3rem;
+    background-color: rgba(17, 156, 225, 0.592);
+    /* background-image: linear-gradient(157deg, rgba(0, 225, 255, 0.656), rgba(255, 0, 0, 0.549), rgba(20, 151, 147, 0.609), rgba(92, 8, 8, 0.46)); */
+    box-shadow: rgba(0, 0, 0, 0.328) 0px 514px 55px, rgb(0, 242, 255) 0px -12px 30px, rgb(21, 226, 216) 0px 4px 6px, rgb(255, 255, 255) 0px 12px 13px, rgba(255, 255, 255, 0.815) 0px -3px 5px;
+    border-radius:30px;
+    
+}
+fieldset button {
+    
+    grid-column: span 3;
+    height: 40px;
+    width: 180px;
+    
+    margin: 2rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-image: linear-gradient(157deg, rgba(51, 220, 74, 0.9), rgba(20, 151, 147, 0.609), rgba(25, 167, 58, 1));
+}
+fieldset button:hover {
+        transform: scale(1.04, 1.07);
+
+        background-image: linear-gradient(157deg, rgba(51, 220, 74, 1), rgba(20, 151, 147, 1), rgba(25, 167, 58, 1));
+
+    }
 fieldset p {
-    grid-column: 2;
-    font-size: .8rem;
+grid-column: 2;
+font-size: 1rem;
 }
 label {
     grid-column: 1;
-    font-size: 1.2rem;
-    width
+    font-size: 1.1rem;
+    width: 70%;
+    color: black;
+}
+header {
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
 }
 input {
+    box-shadow:rgb(0, 0, 0) 4px 4px 4px;
     padding-left:10px;
-    background-color: rgba(2, 162, 255, 0.4);
-    grid-column: 2;
-    color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.542);
+    grid-column: 2 ;
+    color: rgb(0, 0, 0);
     border: solid 2px black;
-    height: 40px;
+    height: 2.4rem;
+    width: 100%;
     font-size: 1.2rem;
     border-radius: 10px;
+}
+input:hover {
+    border: 2px solid lightblue;
+}
+input[checkbox] {
+    height: 1rem;
 }
 input:focus {
     outline: none;
     background-image: linear-gradient(44deg, rgba(136, 64, 64, 0.545), rgba(140, 57, 57, 0.47), rgba(127, 55, 55, 0.171));
 }
-input:valid {
+.input-valid {
     border: solid 2px rgb(135, 255, 88);
 }
-input:invalid {
+.input-invalid {
     border: solid 2px red;
 }
+#Connection, #Inscription {
+    margin: auto auto;
+    padding: 7%;
+}
+
+
+
 body {
-    display:flex;
-    flex-direction: column;
-    background-image: linear-gradient(23deg,lightblue ,blueviolet ,cyan);
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+    display:block;
+    background-image: linear-gradient(79deg,rgb(0, 0, 0), rgb(4, 156, 206),cyan, rgb(17, 156, 225) ,rgb(0, 0, 0));
     background-repeat: no-repeat;
-    height: 125vh;
+    height: 520vh;
+    width: 100vw;
     align-items: center;
+    justify-content: start;
 
 }
 .little {
     display: flex;
-    align-items: center;
-    grid-column: 2;
+    grid-column: 2 ;
+    width: 30%;
+
 }
-#form-msg {
-    font-size: 1.2rem;
+.margin-2 {
+    margin: 1rem;
 }
+
+
+
+

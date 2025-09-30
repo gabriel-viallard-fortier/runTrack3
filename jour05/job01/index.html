@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="img">
+        <img id="logo" src="./logo.jpg" alt="logo">
+    </div>
+    <h1>UNE BOUTEILLE À LA MER</h1>
+    <div class="menu">
+        <ul>
+            <div class="ul">
+                <li>
+                    <h3>Inscrivez-vous</h3>
+                </li>
+                <li>
+                    <h3>Connectez vous directement</h3>
+                </li>
+                <li>
+                    <h3>Explorez mon portfolio</h3>
+                </li>
+                <li>
+                    <h3>Envoyez-moi un message</h3>
+                </li>
+
+
+            </div>
+        </ul><br>
+        <hr>
+        <h4><a href="#Inscription">Accéder au formulaire</a></h4>
+    </div>
+
+
+
+
+
+    <div class="forms">
+        <form id="Inscription" name="signInForm" onsubmit="return validateSignIn()" method="post">
+            <fieldset>
+                <legend><b>INSCRIPTION</b></legend>
+                <p id="form-msg"><b>Veuillez remplir ces informations</b></p>
+
+                <label for="name">Nom :</label>
+                <input tabindex="0" required type="text" id="name" name="name">
+                <p id="nameError"></p>
+
+                <label for="firstname">Prénom :</label>
+                <input tabindex="0" required type="text" id="firstname" name="firstname">
+                <p id="firstnameError"></p>
+
+                <label for="address">Adresse :</label>
+                <input tabindex="0" required type="text" id="address" name="address">
+                <p id="addressError"></p>
+
+                <label for="zip">Code postal :</label>
+                <input tabindex="0" required type="text" id="zip" name="zip">
+                <p id="zipError"></p>
+
+                <label for="email ">Email :</label>
+                <input tabindex="0" required type="email" name="email" id="email">
+                <p id="emailError"></p>
+
+                <label for="password1">Mot de passe :
+                </label>
+                <input tabindex="0" required type="password" name="password1" id="password1">
+                <span class="little margin-2">
+                    <input tabindex="0" id="showPassword" name="showPassword" type="checkbox">Montrer le
+                    mot de passe</span>
+                <p id="password1Error"></p>
+
+                <label id="password2Label" for="password2">Confirmez :</label>
+                <input tabindex="0" required type="password" name="password2" id="password2">
+                <p id="password2Error"></p>
+
+
+
+                <button type="submit" id="submit">Envoyer</button>
+            </fieldset>
+        </form>
+
+
+        <form id="Connection" name="LoginForm" onsubmit="return validateSignIn()" method="post">
+            <fieldset>
+                <legend>CONNECTION</legend>
+                <label for="email ">Email :</label>
+                <input tabindex="1" class="margin-2" type="email" name="email" id="email">
+                <label for="password">Mot de passe :</label>
+                <input tabindex="1" type="password" class="margin-2" name="password" id="passsword">
+                <button type="submit">Envoyer</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js" async></script>
+</body>
+
+</html>
