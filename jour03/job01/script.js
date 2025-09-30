@@ -6,5 +6,4 @@ $("#button-show").click(function(){
 $("#button-hide").click(function (){
     $("#text").hide("slow");
     $("#button-hide").hide("quick");
-
 });
