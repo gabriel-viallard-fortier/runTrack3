@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Minuteur</h1>
+    <main>
+        <h2>
+            <span id="hoursDisplay"></span><span id="minutesDisplay"></span><span id="secondsDisplay"></span>
+        </h2>
+        <div class="input-container">
+            <div class="input">
+                <label for="hours">Heures</label>
+                <input id="hours" placeholder="Hours"  min="0" max="59" type="number" value="1">
+            </div>
+            <div class="input">
+                <label for="minutes">Minutes</label>
+                <input id="minutes" placeholder="minutes" min="0" max="59"  type="number" value="1">
+            </div>
+            <div class="input">
+                <label for="seconds">Secondes</label>
+                <input id="seconds" placeholder="seconds" min="0" max="59" type="number" value="1">
+            </div> <br>
+        </div>
+    <button id="pause">Pause</button>
+    <button id="run">Lancer</button>
+    </main>
+    <script src="minuteur.js"></script>
+</body>
+</html>

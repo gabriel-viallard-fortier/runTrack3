@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-</head>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
 
 <body>
     <header>
@@ -24,46 +23,46 @@
     <div class="bg-linear-to-bl from-grey-500 to-cyan-500 h-screen">
         <div class="p-4 flex w-md m-auto">
             <form id="Inscription" name="signInForm" onsubmit="return validateSignIn()" method="post"
-                class="border-2 rounded-md devide-double m-auto bg-linear-to-r from-cyan-500 to-blue-500 ">
-                <p id="form-msg" class="p-4"><b>Veuillez remplir ces informations</b></p>
-                <fieldset class="p-4 grid grid-cols-2 gap-y-4">
-
-                    <label for="name">Nom :<i class="material-icons">local_offer</i></label>
-                    <input tabindex="0" type="text" id="name" name="name" class="border-2 devide-double rounded-md">
-
-                    <label for="firstname">Prénom :<i class="material-icons">local_offer</i></label>
-                    <input tabindex="0" type="text" id="firstname" name="firstname"
-                        class="border-2 devide-double rounded-md">
-
+            class="border-2 rounded-md devide-double m-auto bg-linear-to-r from-cyan-500 to-blue-500">
+            <p id="form-msg" class="p-4"><b>Veuillez remplir ces informations</b></p>
+            <fieldset class="p-4 grid grid-cols-2 gap-y-4">
+                
+                <label for="name">Nom :<i class="material-icons">local_offer</i></label>
+                <input tabindex="0" type="text" id="name" name="name" class="p-1 bg-cyan-400 border-2 devide-double rounded-md focus:outline-2 focus:outline-offset-4 focus:outline-yellow-500 text-black">
+                
+                <label for="firstname">Prénom :<i class="material-icons">local_offer</i></label>
+                <input tabindex="0" type="text" id="firstname" name="firstname"
+                class="p-1 bg-cyan-400 border-2 devide-double rounded-md focus:outline-2 focus:outline-offset-4 focus:outline-yellow-500 text-black">
+                
                     <label class="flex" for="address">Adresse : <i class="material-icons">home</i></label>
                     <input tabindex="0" type="text" id="address" name="address"
-                        class="border-2 devide-double rounded-md">
-
+                    class="p-1 bg-cyan-400 border-2 devide-double rounded-md focus:outline-2 focus:outline-offset-4 focus:outline-yellow-500 text-black">
+                    
                     <label class="flex" for="zip">Code postal :<i class="material-icons">location_city</i></label>
-                    <input tabindex="0" type="text" id="zip" name="zip" class="border-2 devide-double rounded-md">
-
+                    <input tabindex="0" type="text" id="zip" name="zip" class="p-1 bg-cyan-400 border-2 devide-double rounded-md focus:outline-2 focus:outline-offset-4 focus:outline-yellow-500 text-black">
+                    
                     <label class="flex" for="email ">Email : <i class="material-icons">email</i></label>
-                    <input tabindex="0" type="email" name="email" id="email" class="border-2 devide-double rounded-md">
-
+                    <input tabindex="0" type="email" name="email" id="email" class="p-1 bg-cyan-400 border-2 devide-double rounded-md focus:outline-2 focus:outline-offset-4 focus:outline-yellow-500 text-black">
+                    
                     <label for="password1">Mot de passe :<i class="material-icons">https</i>
                     </label>
                     <input tabindex="0" type="password" name="password1" id="password1"
-                        class="border-2 devide-double rounded-md">
-
+                    class="p-1 bg-cyan-400 border-2 devide-double rounded-md focus:outline-2 focus:outline-offset-4 focus:outline-yellow-500 text-black">
+                    
                     <label id="password2Label" for="password2">Confirmez :<i class="material-icons">https</i></label>
                     <input tabindex="0" type="password" name="password2" id="password2"
-                        class="border-2 devide-double rounded-md">
-
+                    class="p-1 bg-cyan-400 border-2 devide-double rounded-md focus:outline-2 focus:outline-offset-4 focus:outline-yellow-500 text-black">
+                    
                     <br><span class="little margin-2">
                         <input tabindex="0" id="showPassword" name="showPassword" type="checkbox"
-                            class="border-2 devide-double"> Montrer le
+                        class="p-1 bg-cyan-400 border-2 devide-double rounded-md focus:outline-2 focus:outline-offset-4 focus:outline-yellow-500 text-black"> Montrer le
                         mot de passe </span>
-
-                    <label>Loisirs :<i class="material-icons">beach_access</i></label>
+                        
+                        <label>Loisirs :<i class="material-icons">beach_access</i></label>
                         <br>
-                    <label>
-                        <input type="checkbox" />
-                        <span>Sport</span>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Sport</span>
                     </label>
                     <label>
                         <input type="checkbox" />
@@ -78,22 +77,22 @@
                         <span>Lecture</span>
                     </label>
                     <br>
-
-
+                    
+                    
                     <button type="submit" id="submit"
                         class="border-2 rounded-md devide-double bg-linear-to-r/longer from-indigo-500 to-teal-400 hue-rotate-270 ">Envoyer</button>
-                </fieldset>
-            </form>
-        </div>
+                    </fieldset>
+                </form>
+            </div>
     </div>
-    </div>
-    <footer class="flex flex-col shadow-xl justify-center items-center gap-4 p-7 bg-blue-500 bottom-0">
+</div>
+<footer class="flex flex-col shadow-xl justify-center items-center gap-4 p-7 bg-blue-500 bottom-0">
+    <div>
         <div>
             <div>
-                <div>
-                    <h2>Footer Content</h2>
-                    <p>You can use rows and columns here to organize your footer
-                        content.</p>
+                <h2>Footer Content</h2>
+                <p>You can use rows and columns here to organize your footer
+                    content.</p>
                 </div>
                 <div>
                     <h5><b>Links</b></h5>

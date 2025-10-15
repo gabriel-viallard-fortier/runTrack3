@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#mon-content {
+display:flex; /* contexte horizontal */ 
+}
+#mon-content img {
+cursor: grab;
+border: 3px solid black;
+}
+.gagne {
+color: green;
+}
+.perdu {
+color:red;
+}
+</style>
+</head>
+<body>
+ <div id="mon-content">
+<img src="arc1.png" alt="arc1">
+
+<img src="arc2.png" alt="arc2">
+
+<img src="arc3.png" alt="arc3">
+
+<img src="arc4.png" alt="arc4">
+
+<img src="arc5.png" alt="arc5">
+
+<img src="arc6.png" alt="arc6">
+  </div>
+
+  <button id="melanger">Mélanger les images</button>
+  <button id="verifier">Vérifier l'ordre</button>
+
+  <div id="message"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  
+    $(document).ready(function(){
+
+
+      function shuffle(array) {
+        let currentIndex = array.length, randomIndex;
+        while (currentIndex != 0) {
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex--;
+          [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+        }
+        return array;
+      }
+
+
+      function melangerImages() {
+        let images = $("#mon-content img").toArray();
+        let melange = shuffle(images);
+        $("#mon-content").empty();
+        melange.forEach(img => $("#mon-content").append(img));
+        $("#message").text("").removeClass("gagne perdu"); // reset message
+      }
+
+      function verifierOrdre() {
+        let images = $("#mon-content img").toArray();
+        let gagne = true;
+
+        for (let i = 0; i < images.length; i++) {
+          if ($(images[i]).data("order") !== i + 1) {
+            gagne = false;
+            break;
+          }
+        }
+
+        if (gagne) {
+          $("#message").text("Vous avez gagné !").removeClass("perdu").addClass("gagne");
+        } else {
+          $("#message").text("Vous avez perdu !").removeClass("gagne").addClass("perdu");
+        }
+      }
+
+
+      $("#melanger").click(melangerImages);
+      $("#verifier").click(verifierOrdre);
+
+
+      melangerImages();
+    });
+</script>
+</body>
+</html>
+
+
